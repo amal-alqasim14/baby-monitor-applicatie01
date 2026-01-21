@@ -6,6 +6,7 @@ import styles from "../styles/HomeStyles";
 export default function HomeScreen({ navigation }) {
   return (
     <View style={styles.container}>
+      <Screen contentStyle={{ paddingHorizontal: 18, paddingTop: 40 }}></Screen>
       {/* Top bar */}
       <View style={styles.topBar}>
         <View style={styles.brand}>
@@ -72,7 +73,7 @@ export default function HomeScreen({ navigation }) {
       </TouchableOpacity>
       
     </View>
-    
+
 
   );
 }
