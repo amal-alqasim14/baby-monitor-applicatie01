@@ -17,7 +17,7 @@ export default function AppNavigator() {
       screenOptions={{
         headerShown: true,
         headerTintColor: "#5D92C9",
-        headerTitle: "",
+        headerTitle: "terug",
       }}
     >
       {/* Back Button */}
