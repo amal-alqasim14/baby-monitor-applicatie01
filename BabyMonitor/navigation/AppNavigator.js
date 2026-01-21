@@ -28,7 +28,7 @@ export default function AppNavigator() {
 
 
       <Stack.Screen name="Login" component={LoginScreen} />
-      <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
+      <Stack.Screen name="Home" component={HomeScreen}/>
       <Stack.Screen name="Settings" component={SettingsScreen} />
       <Stack.Screen name="Live" component={LiveScreen} />
       <Stack.Screen name="SleepReport" component={SleepReportScreen} />
