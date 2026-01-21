@@ -2,11 +2,14 @@ import React from "react";
 import { View, Text, Image, TouchableOpacity } from "react-native";
 import LivePreviewCard from "../components/LivePreviewCard";
 import styles from "../styles/HomeStyles";
+import Screen from "../components/Screen"; 
 
 export default function HomeScreen({ navigation }) {
   return (
+  <Screen contentStyle={{ paddingHorizontal: 18, paddingTop: 40 }}>
     <View style={styles.container}>
-      <Screen contentStyle={{ paddingHorizontal: 18, paddingTop: 40 }}></Screen>
+
+      
       {/* Top bar */}
       <View style={styles.topBar}>
         <View style={styles.brand}>
@@ -73,7 +76,7 @@ export default function HomeScreen({ navigation }) {
       </TouchableOpacity>
       
     </View>
-
+</Screen>
 
   );
 }
