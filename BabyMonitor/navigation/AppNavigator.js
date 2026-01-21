@@ -1,9 +1,12 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
 import StartScreen from "../screens/StartScreen";
 import HomeScreen from "../screens/HomeScreen";
-import MonitorScreen from "../screens/MonitorScreen";
 import LoginScreen from "../screens/LoginScreen";
 import SettingsScreen from "../screens/SettingsScreen";
+import LiveScreen from "../screens/LiveScreen";
+import SleepReportScreen from "../screens/SleepReportScreen";
+import WhiteNoiseScreen from "../screens/WhiteNoiseScreen";
+import SleepQualityScreen from "../screens/SleepQualityScreen";
 
 const Stack = createNativeStackNavigator();
 
@@ -26,8 +29,11 @@ export default function AppNavigator() {
 
       <Stack.Screen name="Login" component={LoginScreen} />
       <Stack.Screen name="Home" component={HomeScreen} />
-      <Stack.Screen name="Monitor" component={MonitorScreen} />
       <Stack.Screen name="Settings" component={SettingsScreen} />
+      <Stack.Screen name="Live" component={LiveScreen} />
+      <Stack.Screen name="SleepReport" component={SleepReportScreen} />
+      <Stack.Screen name="WhiteNoise" component={WhiteNoiseScreen} />
+      <Stack.Screen name="SleepQuality" component={SleepQualityScreen} />
 
     </Stack.Navigator>
   );

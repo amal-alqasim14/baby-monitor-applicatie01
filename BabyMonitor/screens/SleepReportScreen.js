@@ -1,7 +1,7 @@
 import { View, Text } from "react-native";
 import globalStyles from "../styles/globalStyles";
 
-export default function MonitorScreen() {
+export default function SleepQualityScreen() {
   return (
     <View style={globalStyles.container}>
       <Text style={globalStyles.title}>Live Monitor</Text>
