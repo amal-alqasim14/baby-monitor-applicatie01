@@ -12,7 +12,7 @@ const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
   return (
-    <Stack.Navigator
+ <Stack.Navigator
       initialRouteName="Start"
       screenOptions={{
         headerShown: true,
@@ -20,15 +20,15 @@ export default function AppNavigator() {
         headerTitle: "",
       }}
     >
-      {/* Back Button */}
       <Stack.Screen
         name="Start"
         component={StartScreen}
-        options={{ headerShown: true }}
+        options={{ headerShown: false }}
       />
 
+
       <Stack.Screen name="Login" component={LoginScreen} />
-      <Stack.Screen name="Home" component={HomeScreen} />
+      <Stack.Screen name="Home" component={HomeScreen} options={{ headerShown: false }} />
       <Stack.Screen name="Settings" component={SettingsScreen} />
       <Stack.Screen name="Live" component={LiveScreen} />
       <Stack.Screen name="SleepReport" component={SleepReportScreen} />
