@@ -12,19 +12,25 @@ const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
   return (
- <Stack.Navigator
-      initialRouteName="Start"
-      screenOptions={{
-        headerShown: true,
-        headerTintColor: "#5D92C9",
-        headerTitle: "",
-      }}
-    >
-      <Stack.Screen
-        name="Start"
-        component={StartScreen}
-        options={{ headerShown: false }}
-      />
+<Stack.Navigator
+  initialRouteName="Start"
+  screenOptions={{
+    headerShown: true,
+    headerTintColor: "#5D92C9",
+    headerTitle: "",
+  }}
+>
+  <Stack.Screen
+    name="Start"
+    component={StartScreen}
+    options={{ headerShown: false }}
+  />
+
+  <Stack.Screen
+    name="Login"
+    component={LoginScreen}
+    options={{ headerBackTitle: "Terug" }}
+  />
 
 
       <Stack.Screen name="Login" component={LoginScreen} />
