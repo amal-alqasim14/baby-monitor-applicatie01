@@ -17,14 +17,14 @@ export default function AppNavigator() {
       screenOptions={{
         headerShown: true,
         headerTintColor: "#5D92C9",
-        headerTitle: "terug",
+        headerTitle: "",
       }}
     >
       {/* Back Button */}
       <Stack.Screen
         name="Start"
         component={StartScreen}
-        options={{ headerShown: false }}
+        options={{ headerShown: true }}
       />
 
       <Stack.Screen name="Login" component={LoginScreen} />
