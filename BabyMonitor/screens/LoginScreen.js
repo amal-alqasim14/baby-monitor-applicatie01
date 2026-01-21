@@ -6,7 +6,7 @@ export default function LoginScreen({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.box}>
-        <Text style={styles.title}>Aanmelden</Text>
+        {/* <Text style={styles.title}>Aanmelden</Text> */}
 
         <TextInput
           style={styles.input}
