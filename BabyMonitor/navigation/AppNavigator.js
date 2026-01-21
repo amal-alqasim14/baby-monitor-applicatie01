@@ -1,5 +1,4 @@
 import { createNativeStackNavigator } from "@react-navigation/native-stack";
-import { createStackNavigator } from "@react-navigation/stack";
 import StartScreen from "../screens/StartScreen";
 import HomeScreen from "../screens/HomeScreen";
 import LoginScreen from "../screens/LoginScreen";
@@ -9,7 +8,7 @@ import SleepReportScreen from "../screens/SleepReportScreen";
 import WhiteNoiseScreen from "../screens/WhiteNoiseScreen";
 import SleepQualityScreen from "../screens/SleepQualityScreen";
 
-const Stack = createStackNavigator();
+const Stack = createNativeStackNavigator();
 
 export default function AppNavigator() {
   return (
